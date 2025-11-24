@@ -1195,3 +1195,21 @@ header {
         align-self: center;
     }
 }
+/* 15. Fix Mobile Contact Page Alignment */
+@media (max-width: 768px) {
+    .contact-method {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .method-info {
+        width: 100%;
+    }
+    
+    .method-info h3,
+    .method-info p,
+    .method-info a,
+    .method-info span {
+        text-align: center;
+    }
+}
