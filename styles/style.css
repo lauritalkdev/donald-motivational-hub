@@ -434,6 +434,7 @@ header {
         grid-template-columns: 1fr;
     }
 }
+
 /* 9. YouTube Page Styles */
 
 /* YouTube Hero Section */
@@ -528,36 +529,23 @@ header {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* FIXED: YouTube Video Container Styles */
 .video-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     background: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.video-placeholder {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
-}
-
-.video-placeholder p {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.video-placeholder small {
-    opacity: 0.8;
-    font-size: 0.9rem;
+    border: none;
 }
 
 .video-info {
@@ -684,7 +672,8 @@ header {
     .playlists-grid {
         grid-template-columns: 1fr;
     }
-} 
+}
+
 /* 11. Blog Page Styles */
 
 /* Blog Hero Section */
@@ -943,6 +932,7 @@ header {
         height: 200px;
     }
 }
+
 /* 13. Contact Page Styles */
 
 /* Contact Hero Section */
@@ -1195,6 +1185,7 @@ header {
         align-self: center;
     }
 }
+
 /* 15. Fix Mobile Contact Page Alignment */
 @media (max-width: 768px) {
     .contact-method {
@@ -1213,3 +1204,5 @@ header {
         text-align: center;
     }
 }
+
+/* REMOVED: Duplicate video container styles that were causing conflicts */
